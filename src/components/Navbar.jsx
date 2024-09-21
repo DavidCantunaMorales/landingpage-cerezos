@@ -19,13 +19,13 @@ export const Navbar = () => {
           }  top-0 flex-1 flex flex-col items-center justify-center gap-10 transition-all duration-500 ease-in-out text-cerezo-secondary
             xl:static xl:flex-row xl:w-full`}
         >
-          <a href="#">Inicio</a>
-          <a href="#">Sobre Nosotros</a>
-          <a href="#">Servicios</a>
-          <a href="#">Terapias</a>
-          <a href="#">Galeria</a>
-          <a href="#">Salidas</a>
-          <a href="#">Contactos</a>
+          <a href="/">Inicio</a>
+          <a href="/sobre-nosotros">Sobre Nosotros</a>
+          <a href="/servicios">Servicios</a>
+          <a href="/terapias">Terapias</a>
+          <a href="/galeria">Galeria</a>
+          <a href="/salidas">Salidas</a>
+          <a href="/contactos">Contactos</a>
         </nav>
         <button
           className="text-2xl xl:hidden"
