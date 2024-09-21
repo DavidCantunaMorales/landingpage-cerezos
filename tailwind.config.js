@@ -10,13 +10,6 @@ export default {
           light: "#FAD6D6",
           dark: "#9C252F",
         },
-        "cerezo-gradient": {
-          50: "#fcf5f4",
-          100: "#fae8e6",
-          200: "#f6d5d2",
-          300: "#efb7b2",
-          400: "#e48d85",
-        },
       },
     },
   },

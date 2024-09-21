@@ -14,8 +14,8 @@ export const Navbar = () => {
           </h1>
         </div>
         <nav
-          className={`fixed bg-cerezo w-[80%] h-full ${
-            showMenu ? "left-0" : "-left-full"
+          className={`fixed bg-cerezo w-[80%] h-full font-bold ${
+            showMenu ? "left-0 bg-cerezo-primary" : "-left-full"
           }  top-0 flex-1 flex flex-col items-center justify-center gap-10 transition-all duration-500 ease-in-out text-cerezo-secondary
             xl:static xl:flex-row xl:w-full`}
         >
