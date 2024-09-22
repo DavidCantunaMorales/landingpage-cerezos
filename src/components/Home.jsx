@@ -1,10 +1,9 @@
-import cerezosHome from "../assets/cerezos-home.webp";
+import CerezosImage from "../assets/cerezos-home.webp";
 
 export const Home = () => {
   return (
     <>
-      <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
-        {/* Informacion */}
+      {/* <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
         <div className="md:col-span-5 flex items-center justify-center p-8">
           <div className="flex flex-col gap-4">
             <h1 className="text-7xl font-bold text-center">
@@ -36,131 +35,67 @@ export const Home = () => {
             className="h-full w-full object-cover p-5"
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="flex p-8">
-        <div className="w-[40%] bg-cyan-100">
-          <h1 className="text-5xl font-bold text-center">
-            ¿Por qué Elegirnos?
-          </h1>
-          <p className="text-gray-600 mt-4 text-center">
-            Nos destacamos por nuestro compromiso con la atención personalizada
-            y las instalaciones modernas que garantizan el bienestar de nuestros
-            residentes.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="/path/to/commitment-icon"
-              alt="Compromiso"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">Compromiso y dedicación</h3>
-            <p className="text-gray-600">
-              Profesionales dedicados a brindar atención personalizada.
-            </p>
-          </div>
-
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="/path/to/facilities-icon"
-              alt="Instalaciones Modernas"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">Instalaciones Modernas</h3>
-            <p className="text-gray-600">
-              Espacios diseñados para el confort y seguridad de los residentes.
-            </p>
-          </div>
-
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="/path/to/activities-icon"
-              alt="Actividades"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">Actividades y terapias</h3>
-            <p className="text-gray-600">
-              Programas diseñados para promover el bienestar físico y emocional.
-            </p>
-          </div>
-
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
-            <img
-              src="/path/to/family-icon"
-              alt="Ambiente Familiar"
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">Ambiente familiar</h3>
-            <p className="text-gray-600">
-              Un entorno cálido y acogedor donde todos se sienten en casa.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Sección de "Por qué elegirnos" */}
-      <section className="py-16 bg-gray-100">
-        <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold">¿Por qué elegirnos?</h2>
-          <p className="text-gray-600 mt-4">
-            Nos destacamos por nuestro compromiso con la atención personalizada
-            y las instalaciones modernas que garantizan el bienestar de nuestros
-            residentes.
+      <section className="flex flex-col bg-gray-100 items-center gap-8 p-6 md:flex-row md:items-start md:p-12">
+        {/* Sección de texto */}
+        <div className="md:w-[40%] bg-red-400 md:mt-52 md:text-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            ¿Por qué elegirnos?
+          </h2>
+          <p className="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
+            pulvinar lorem felis nec erat.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
+        {/* Sección de las tarjetas */}
+        <div className="md:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="flex flex-col items-center p-4 border rounded-lg shadow-sm bg-white">
             <img
-              src="/path/to/commitment-icon"
-              alt="Compromiso"
-              className="mx-auto mb-4"
+              src={CerezosImage}
+              alt="Residencia Los Cerezos"
+              className="w-[450px] h-[200px] object-cover mb-3"
             />
-            <h3 className="text-xl font-bold mb-2">Compromiso y dedicación</h3>
-            <p className="text-gray-600">
-              Profesionales dedicados a brindar atención personalizada.
-            </p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Compromiso y dedicación
+            </h3>
           </div>
-
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
+          <div className="flex flex-col items-center p-4 border rounded-lg shadow-sm bg-white">
             <img
-              src="/path/to/facilities-icon"
-              alt="Instalaciones Modernas"
-              className="mx-auto mb-4"
+              src={CerezosImage}
+              alt="Residencia Los Cerezos"
+              className="w-[450px] h-[200px] object-cover mb-3"
             />
-            <h3 className="text-xl font-bold mb-2">Instalaciones Modernas</h3>
-            <p className="text-gray-600">
-              Espacios diseñados para el confort y seguridad de los residentes.
-            </p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Instalaciones Modernas
+            </h3>
           </div>
-
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
+          <div className="flex flex-col items-center p-4 border rounded-lg shadow-sm bg-white">
             <img
-              src="/path/to/activities-icon"
-              alt="Actividades"
-              className="mx-auto mb-4"
+              src={CerezosImage}
+              alt="Residencia Los Cerezos"
+              className="w-[450px] h-[200px] object-cover mb-3"
             />
-            <h3 className="text-xl font-bold mb-2">Actividades y terapias</h3>
-            <p className="text-gray-600">
-              Programas diseñados para promover el bienestar físico y emocional.
-            </p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Actividades y terapias
+            </h3>
           </div>
-
-          <div className="text-center bg-white p-6 shadow-md rounded-lg">
+          <div className="flex flex-col items-center p-4 border rounded-lg shadow-sm bg-white">
             <img
-              src="/path/to/family-icon"
-              alt="Ambiente Familiar"
-              className="mx-auto mb-4"
+              src={CerezosImage}
+              alt="Residencia Los Cerezos"
+              className="w-[450px] h-[200px] object-cover mb-3"
             />
-            <h3 className="text-xl font-bold mb-2">Ambiente familiar</h3>
-            <p className="text-gray-600">
-              Un entorno cálido y acogedor donde todos se sienten en casa.
-            </p>
+            <h3 className="text-lg font-semibold text-gray-800">
+              Ambiente familiar
+            </h3>
           </div>
         </div>
       </section>
+
+      <section>Testimonios</section>
     </>
   );
 };
