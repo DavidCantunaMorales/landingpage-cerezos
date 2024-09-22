@@ -3,13 +3,13 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Navbar } from "./components/Navbar.jsx";
-import { Home } from "./components/Home.jsx";
-import { Servicios } from "./components/Servicios.jsx";
-import { SobreNosotros } from "./components/SobreNosotros.jsx";
-import { Terapias } from "./components/Terapias.jsx";
-import { Galeria } from "./components/Galeria.jsx";
-import { Salidas } from "./components/Salidas.jsx";
-import { Contactos } from "./components/Contactos.jsx";
+import { Home } from "./pages/Home.jsx";
+import { Servicios } from "./pages/Servicios.jsx";
+import { SobreNosotros } from "./pages/SobreNosotros.jsx";
+import { Terapias } from "./pages/Terapias.jsx";
+import { Galeria } from "./pages/Galeria.jsx";
+import { Salidas } from "./pages/Salidas.jsx";
+import { Contactos } from "./pages/Contactos.jsx";
 
 import "./index.css";
 

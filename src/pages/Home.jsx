@@ -1,5 +1,5 @@
 import CerezosImage from "../assets/cerezos-home.webp";
-
+w;
 export const Home = () => {
   return (
     <>
@@ -94,8 +94,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
-      <section>Testimonios</section>
     </>
   );
 };
