@@ -1,9 +1,9 @@
 import CerezosImage from "../assets/cerezos-home.webp";
-w;
+
 export const Home = () => {
   return (
     <>
-      {/* <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
+      { <section className="h-[90vh] grid grid-cols-1 md:grid-cols-8">
         <div className="md:col-span-5 flex items-center justify-center p-8">
           <div className="flex flex-col gap-4">
             <h1 className="text-7xl font-bold text-center">
@@ -30,12 +30,12 @@ export const Home = () => {
         </div>
         <div className="md:col-span-3">
           <img
-            src={cerezosHome}
+            src={CerezosImage}
             alt="Residencia Los Cerezos"
             className="h-full w-full object-cover p-5"
           />
         </div>
-      </section> */}
+      </section> }
 
       <section className="flex flex-col bg-gray-100 items-center gap-8 p-6 md:flex-row md:items-start md:p-12">
         {/* Sección de texto */}
