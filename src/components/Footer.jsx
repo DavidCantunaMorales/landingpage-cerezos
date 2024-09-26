@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.jpg";
+import Logo from "../assets/logo.png";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
