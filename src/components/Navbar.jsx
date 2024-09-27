@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { Outlet } from "react-router-dom";
+import Footer from "./footer";
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -35,6 +36,7 @@ export const Navbar = () => {
         </button>
       </header>
       <Outlet />
+      <Footer/>
     </>
   );
 };
