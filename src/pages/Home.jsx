@@ -1,5 +1,5 @@
 import CerezosImage from "../assets/cerezos-home.webp";
-w;
+
 export const Home = () => {
   return (
     <>
@@ -92,6 +92,21 @@ export const Home = () => {
               Ambiente familiar
             </h3>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="">
+          <h1>Testimonios</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+            placeat assumenda sapiente nobis libero. Dolor quibusdam asperiores
+            ducimus quis modi rerum dolores molestias ullam iure error
+            perspiciatis, voluptatibus vero quas.
+          </p>
+        </div>
+        <div>
+          <img src={CerezosImage} alt="" className="rounded-full h-[65px]" />
         </div>
       </section>
     </>
