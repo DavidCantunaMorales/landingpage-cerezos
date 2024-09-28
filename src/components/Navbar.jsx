@@ -10,7 +10,7 @@ export const Navbar = () => {
     <>
       <header className="flex justify-between items-center w-full p-4 h-[10vh] bg-[#ac2454] xl:justify-center">
         <div className="text-center xl:w-1/6">
-          <h1 className="text-2xl font-bold p-1 text-white">
+          <h1 className="text-3xl font-bold p-1 text-white">
             Los Cerezos
           </h1>
         </div>
