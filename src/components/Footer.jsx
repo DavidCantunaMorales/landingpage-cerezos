@@ -6,14 +6,14 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 shadow-md py-8">
-      <div className="container mx-auto text-center">
+    <footer className="bg-gray-100 shadow-md">
+      <div className="mx-auto text-center">
         {/* Logo and title */}
         <div className="mb-4">
           <img
             src={Logo}
             alt="Logo"
-            className="mx-auto h-56 w-auto object-contain"
+            className="mx-auto h-64 w-auto object-contain"
           />
         </div>
 
@@ -31,14 +31,14 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="bg-pink-200 py-4">
-          <p className="text-gray-500">
+        <div className="bg-[#ac2454] py-4">
+          <p className="text-white">
             Copyright © 2024 <span className="font-bold">Website</span>. All rights reserved.
           </p>
           <div className="mt-2 flex justify-center space-x-2 text-sm">
-            <a href="#" className="hover:underline">Terms & Conditions</a>
-            <span>|</span>
-            <a href="#" className="hover:underline">Privacy Policy</a>
+            <a href="#" className="hover:underline text-white">Terms & Conditions</a>
+            <span className="text-white">|</span>
+            <a href="#" className="hover:underline text-white">Privacy Policy</a>
           </div>
         </div>
       </div>
