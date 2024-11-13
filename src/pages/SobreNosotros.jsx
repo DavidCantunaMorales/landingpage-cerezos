@@ -1,23 +1,25 @@
 import CardImgDer from "../components/CardImgDer.jsx";
 import CardImgIzq from "../components/CardImgIzq.jsx";
+import CerezosImage from '../assets/cerezos-home.webp';
+
 
 export const SobreNosotros = () => {
   // Datos de ejemplo
   const cardsData = [
     {
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: CerezosImage,
       altText: "Misión",
       title: "Misión",
       description: "Nuestra misión es proporcionar un servicio de alta calidad para todos nuestros clientes.",
     },
     {
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: CerezosImage,
       altText: "Visión",
       title: "Visión",
       description: "Nuestra visión es convertirnos en líderes de la industria con soluciones innovadoras.",
     },
     {
-      imageSrc: "https://via.placeholder.com/150",
+      imageSrc: CerezosImage,
       altText: "Valores",
       title: "Valores",
       description: "Nuestros valores fundamentales son la integridad, el respeto y la innovación.",
