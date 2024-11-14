@@ -17,7 +17,7 @@ export const Navbar = () => {
         <nav
           className={`fixed bg-cerezo w-[80%] h-full font-bold ${
             showMenu ? "left-0 bg-[#ac2454]" : "-left-full"
-          }  top-0 flex-1 flex flex-col items-center justify-center gap-10 transition-all duration-500 ease-in-out text-white
+          }  top-0 flex-1 flex flex-col items-center justify-center z-50 gap-10 transition-all duration-500 ease-in-out text-white
             xl:static xl:flex-row xl:w-full`}
         >
           <a href="/">Inicio</a>
