@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import CerezosImage from '../assets/cerezos-home.webp';
 
 export const Home = () => {
@@ -70,10 +70,13 @@ export const Home = () => {
             <h2 className='text-2xl font-bold text-gray-800 mb-4'>
               ¿Por qué elegirnos?
             </h2>
-            <p className='text-gray-600 text-sm sm:text-base'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
-              pulvinar lorem felis nec erat.
+            <p className='text-gray-600 text-sm sm:text-base md:text-lg'>
+              En Residencia Los Cerezos, ofrecemos un ambiente cálido y acogedor
+              para nuestros residentes. Nuestro equipo de profesionales
+              altamente capacitados se dedica a proporcionar cuidados de
+              calidad, fomentando el bienestar físico, emocional y social. Aquí,
+              cada residente es tratado como un miembro de nuestra familia, con
+              atención personalizada y un enfoque en su comodidad y felicidad.
             </p>
           </div>
         </div>
@@ -120,7 +123,11 @@ export const Home = () => {
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
               }}
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
               className='w-full max-w-md mx-auto'
             >
               {testimonios.map((testimonio, index) => (
@@ -146,12 +153,8 @@ export const Home = () => {
             </Swiper>
 
             {/* Flechas de navegación a los lados del carrusel */}
-            <div className='swiper-button-prev md:flex hidden items-center justify-center w-10 h-10 bg-red-600 rounded-full text-white cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-[-20px] hover:bg-red-700 transition z-10'>
-              &#10094;
-            </div>
-            <div className='swiper-button-next md:flex hidden items-center justify-center w-10 h-10 bg-red-600 rounded-full text-white cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-[-20px] hover:bg-red-700 transition z-10'>
-              &#10095;
-            </div>
+            <div className='swiper-button-prev md:flex hidden items-center justify-center w-10 h-10 text-gray-700 cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-[-20px] z-10'></div>
+            <div className='swiper-button-next md:flex hidden items-center justify-center w-10 h-10 text-gray-700 cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-[-20px] transition z-10'></div>
           </div>
         </div>
       </section>
