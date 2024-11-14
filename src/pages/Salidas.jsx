@@ -2,10 +2,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import CerezosImage from '../assets/cerezos-home.webp';
+import { useState } from 'react';
 
 export const Salidas = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState('');
+
+  const openModal = (content) => {
+    setModalContent(content);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent('');
+  };
+
   const proximasSalidas = [
     {
       titulo: 'Visita al Jardín Botánico',
@@ -44,14 +58,17 @@ export const Salidas = () => {
           Salidas recientes
         </h2>
         <Swiper
-          modules={[Pagination, Navigation]}
+          modules={[Navigation, Autoplay]} // Añadimos Autoplay como módulo
           spaceBetween={20}
           slidesPerView={1}
+          autoplay={{
+            delay: 3000, // Tiempo en milisegundos (3 segundos)
+            disableOnInteraction: false, // Permite seguir con autoplay tras interacción del usuario
+          }}
           navigation={{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           }}
-          pagination={{ clickable: true }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -62,7 +79,7 @@ export const Salidas = () => {
           {/* Carrusel de Salidas Recientes */}
           {[...Array(5)].map((_, index) => (
             <SwiperSlide key={index}>
-              <div className='flex flex-col md:flex-row items-center gap-8 bg-white shadow-lg rounded-lg p-6 max-w-[90%] mx-auto'>
+              <div className='flex flex-col md:flex-row items-center gap-8 bg-white shadow-lg rounded-lg p-4 max-w-[80%] mx-auto'>
                 <div className='md:w-1/2'>
                   <p className='text-gray-600 text-lg'>
                     Recientemente, nuestros residentes disfrutaron de un día
@@ -81,17 +98,12 @@ export const Salidas = () => {
             </SwiperSlide>
           ))}
 
-          {/* Botones de Navegación */}
-          <div className='swiper-button-prev hidden md:flex absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-700 bg-white p-2 rounded-full shadow-lg z-10'>
-            ❮
-          </div>
-          <div className='swiper-button-next hidden md:flex absolute right-0 top-1/2 transform -translate-y-1/2 text-3xl text-gray-700 bg-white p-2 rounded-full shadow-lg z-10'>
-            ❯
-          </div>
+          {/* Botones de Navegación con react-icons */}
+          <div className='swiper-button-prev hidden md:flex absolute top-1/2 left-4 transform -translate-y-1/2 text-gray-700 z-10 cursor-pointer'></div>
+          <div className='swiper-button-next hidden md:flex absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-700 z-10 cursor-pointer'></div>
         </Swiper>
       </div>
 
-      {/* Sección de Próximas Salidas */}
       <div className='container mx-auto px-8'>
         <h2 className='text-5xl font-bold text-center mb-8'>
           Próximas salidas
@@ -114,12 +126,12 @@ export const Salidas = () => {
                 <div>
                   <h3 className='text-xl font-semibold'>{salida.titulo}</h3>
                   <p className='text-gray-600'>{salida.descripcion}</p>
-                  <a
-                    href={salida.link}
-                    className='text-blue-600 hover:text-blue-800'
+                  <button
+                    onClick={() => openModal(salida.descripcion)}
+                    className='text-blue-600 hover:text-blue-800 bg-transparent border-none cursor-pointer'
                   >
-                    Learn more →
-                  </a>
+                    Más información
+                  </button>
                 </div>
               </div>
             ))}
@@ -145,17 +157,35 @@ export const Salidas = () => {
                 <div>
                   <h3 className='text-xl font-semibold'>{salida.titulo}</h3>
                   <p className='text-gray-600'>{salida.descripcion}</p>
-                  <a
-                    href={salida.link}
-                    className='text-blue-600 hover:text-blue-800'
+                  <button
+                    onClick={() => openModal(salida.descripcion)}
+                    className='text-blue-600 hover:text-blue-800 bg-transparent border-none cursor-pointer'
                   >
-                    Learn more →
-                  </a>
+                    Más información
+                  </button>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Modal */}
+        {isModalOpen && (
+          <div className='fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-20'>
+            <div className='bg-white p-6 rounded-lg shadow-lg max-w-lg w-full'>
+              <h3 className='text-2xl font-semibold mb-4'>
+                Detalles de la salida
+              </h3>
+              <p className='text-gray-600'>{modalContent}</p>
+              <button
+                onClick={closeModal}
+                className='mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700'
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
