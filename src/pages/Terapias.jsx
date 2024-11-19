@@ -1,7 +1,5 @@
-// components/Terapias.jsx
-import CardImgArri from "../components/CardImgArri.jsx";
+import CardImgArri from '../components/CardImgArri.jsx';
 import CerezosImage from '../assets/cerezos-home.webp';
-
 
 const therapies = [
   {
@@ -18,42 +16,25 @@ const therapies = [
     description: 'Ayuda a realizar actividades diarias.',
     details: 'Detalles completos de la Terapia Ocupacional...',
   },
-  {
-    imageSrc: CerezosImage,
-    altText: 'Therapy 2',
-    title: 'Terapia Ocupacional',
-    description: 'Ayuda a realizar actividades diarias.',
-    details: 'Detalles completos de la Terapia Ocupacional...',
-  },
-  {
-    imageSrc: CerezosImage,
-    altText: 'Therapy 2',
-    title: 'Terapia Ocupacional',
-    description: 'Ayuda a realizar actividades diarias.',
-    details: 'Detalles completos de la Terapia Ocupacional...',
-  },
-  {
-    imageSrc: CerezosImage,
-    altText: 'Therapy 2',
-    title: 'Terapia Ocupacional',
-    description: 'Ayuda a realizar actividades diarias.',
-    details: 'Detalles completos de la Terapia Ocupacional...',
-  },
-  {
-    imageSrc: CerezosImage,
-    altText: 'Therapy 2',
-    title: 'Terapia Ocupacional',
-    description: 'Ayuda a realizar actividades diarias.',
-    details: 'Detalles completos de la Terapia Ocupacional...',
-  },
-  // Añadir 6 terapias más con el mismo formato
+  // Añadir más terapias con el mismo formato según sea necesario
 ];
 
 export const Terapias = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-8">Terapias</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section className='h-auto p-8 bg-gray-100'>
+      {/* Título y descripción de la sección */}
+      <div className='text-center mb-12'>
+        <h1 className='text-6xl font-bold'>
+          Nuestras <span className='text-red-600'>Terapias</span>
+        </h1>
+        <p className='text-gray-600 text-xl mt-4'>
+          En Los Cerezos, nos comprometemos a ofrecer terapias especializadas
+          para el bienestar y la recuperación de nuestros residentes.
+        </p>
+      </div>
+
+      {/* Listado de Terapias */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {therapies.map((therapy, index) => (
           <CardImgArri
             key={index}
@@ -65,6 +46,6 @@ export const Terapias = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
