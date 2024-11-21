@@ -13,18 +13,18 @@ export const Galeria = () => {
   return (
     <section className='h-auto py-16 bg-gray-100'>
       {/* Título de la sección */}
-      <div className='text-center mb-12'>
-        <h2 className='text-6xl font-bold text-gray-800'>
+      <div className='text-center mb-12 px-4 sm:px-8'>
+        <h2 className='text-4xl sm:text-6xl font-bold text-gray-800'>
           Nuestra <span className='text-red-600'>Galería</span>
         </h2>
-        <p className='text-gray-600 text-xl mt-4'>
+        <p className='text-gray-600 text-lg sm:text-xl mt-4'>
           Descubre nuestros espacios y las actividades que realizamos para el
           bienestar de nuestros residentes.
         </p>
       </div>
 
       {/* Grid de la galería */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-8'>
         {imagenes.map((imagen, index) => (
           <div
             key={index}
