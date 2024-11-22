@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Redirect</title>
+</head>
+
+<body>
+    <script>
+        // Redirige al index.html manteniendo la ruta
+        const redirectTo = window.location.pathname.replace('/landingpage-cerezos/', '');
+        window.location.href = '/landingpage-cerezos/' + redirectTo;
+    </script>
+</body>
+
+</html>
