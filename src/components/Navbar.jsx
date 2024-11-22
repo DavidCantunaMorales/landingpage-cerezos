@@ -13,6 +13,9 @@ export const Navbar = () => {
     window.scrollTo(0, 0); // Desplazar la página al inicio
   }, [location]);
 
+  // Función para determinar si la ruta está activa
+  const isActive = (path) => location.pathname === path;
+
   return (
     <>
       <header className='flex justify-between items-center w-full p-4 h-[10vh] bg-[#ac2454] xl:justify-center fixed top-0 z-50'>
@@ -25,13 +28,74 @@ export const Navbar = () => {
           } top-0 flex-1 flex flex-col items-center justify-center z-10 gap-10 transition-all duration-500 ease-in-out text-white
             xl:static xl:flex-row xl:w-full`}
         >
-          <Link to='/'>Inicio</Link>
-          <Link to='/sobre-nosotros'>Sobre Nosotros</Link>
-          <Link to='/servicios'>Servicios</Link>
-          <Link to='/terapias'>Terapias</Link>
-          <Link to='/galeria'>Galeria</Link>
-          <Link to='/salidas'>Salidas</Link>
-          <Link to='/contactos'>Contactos</Link>
+          <Link
+            to='/'
+            className={`nav-link ${
+              isActive('/') ? 'text-[#ac2454] bg-white px-4 py-2 rounded' : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Inicio
+          </Link>
+          <Link
+            to='/sobre-nosotros'
+            className={`nav-link ${
+              isActive('/sobre-nosotros')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Sobre Nosotros
+          </Link>
+          <Link
+            to='/servicios'
+            className={`nav-link ${
+              isActive('/servicios')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Servicios
+          </Link>
+          <Link
+            to='/terapias'
+            className={`nav-link ${
+              isActive('/terapias')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Terapias
+          </Link>
+          <Link
+            to='/galeria'
+            className={`nav-link ${
+              isActive('/galeria')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Galeria
+          </Link>
+          <Link
+            to='/salidas'
+            className={`nav-link ${
+              isActive('/salidas')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Salidas
+          </Link>
+          <Link
+            to='/contactos'
+            className={`nav-link ${
+              isActive('/contactos')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Contactos
+          </Link>
         </nav>
         <button
           className='text-2xl xl:hidden'
