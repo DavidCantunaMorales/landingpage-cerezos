@@ -9,9 +9,9 @@
 
 <body>
     <script>
-        // Redirige al index.html manteniendo la ruta
+        // Redirige al index.html manteniendo la ruta, pero con un hash para React Router
         const redirectTo = window.location.pathname.replace('/landingpage-cerezos/', '');
-        window.location.href = '/landingpage-cerezos/' + redirectTo;
+        window.location.href = '/landingpage-cerezos/#' + redirectTo;
     </script>
 </body>
 
