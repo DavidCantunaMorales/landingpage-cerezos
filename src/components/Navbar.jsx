@@ -1,17 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 import Footer from './footer';
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation(); // Hook para obtener la ubicación actual
+
+  // Cerrar el menú cuando la ubicación cambie y desplazar la página al inicio
+  useEffect(() => {
+    setShowMenu(false); // Cerrar el menú
+    window.scrollTo(0, 0); // Desplazar la página al inicio
+  }, [location]);
 
   return (
     <>
-      <header className='flex justify-between items-center w-full p-4 h-[10vh] bg-[#ac2454] xl:justify-center relative'>
+      <header className='flex justify-between items-center w-full p-4 h-[10vh] bg-[#ac2454] xl:justify-center fixed top-0 z-50'>
         <div className='text-center xl:w-1/6 z-20'>
-          {' '}
-          {/* Añadido z-index */}
           <h1 className='text-3xl font-bold p-1 text-white'>Los Cerezos</h1>
         </div>
         <nav
@@ -39,7 +44,9 @@ export const Navbar = () => {
           )}
         </button>
       </header>
-      <Outlet />
+      <div className='pt-[10vh]'>
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
