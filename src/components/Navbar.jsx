@@ -30,7 +30,7 @@ export const Navbar = () => {
         >
           <Link
             to='/'
-            className={`nav-link ${
+            className={`nav-link mt-10 xl:mt-0 ${
               isActive('/') ? 'text-[#ac2454] bg-white px-4 py-2 rounded' : ''
             } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
           >
