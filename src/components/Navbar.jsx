@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import Footer from './footer';
 
 export const Navbar = () => {
@@ -20,13 +20,13 @@ export const Navbar = () => {
           } top-0 flex-1 flex flex-col items-center justify-center z-10 gap-10 transition-all duration-500 ease-in-out text-white
             xl:static xl:flex-row xl:w-full`}
         >
-          <a href='/'>Inicio</a>
-          <a href='/sobre-nosotros'>Sobre Nosotros</a>
-          <a href='/servicios'>Servicios</a>
-          <a href='/terapias'>Terapias</a>
-          <a href='/galeria'>Galeria</a>
-          <a href='/salidas'>Salidas</a>
-          <a href='/contactos'>Contactos</a>
+          <Link to='/'>Inicio</Link>
+          <Link to='/sobre-nosotros'>Sobre Nosotros</Link>
+          <Link to='/servicios'>Servicios</Link>
+          <Link to='/terapias'>Terapias</Link>
+          <Link to='/galeria'>Galeria</Link>
+          <Link to='/salidas'>Salidas</Link>
+          <Link to='/contactos'>Contactos</Link>
         </nav>
         <button
           className='text-2xl xl:hidden'
