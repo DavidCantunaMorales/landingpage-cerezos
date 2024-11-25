@@ -4,6 +4,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 import CerezosImage from '../assets/cerezos-home.webp';
+import InstImage from '../assets/instalacion7.jpg';
+
 
 export const Home = () => {
   const testimonios = [
@@ -30,7 +32,7 @@ export const Home = () => {
         {/* Contenedor de la imagen */}
         <div className='flex items-center justify-center p-4 sm:p-8'>
           <img
-            src={CerezosImage}
+            src={InstImage}
             alt='Residencia Los Cerezos'
             className='w-full h-full object-cover rounded-lg shadow-lg md:max-h-[500px]'
           />
