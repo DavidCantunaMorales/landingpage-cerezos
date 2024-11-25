@@ -8,6 +8,7 @@ import {
 
 import { Navbar } from './components/Navbar.jsx';
 import { Home } from './pages/Home.jsx';
+import { Instalaciones } from './pages/Instalaciones.jsx';
 import { Servicios } from './pages/Servicios.jsx';
 import { SobreNosotros } from './pages/SobreNosotros.jsx';
 import { Terapias } from './pages/Terapias.jsx';
@@ -33,6 +34,10 @@ const router = createHashRouter([
       {
         path: '/servicios', // Ruta para Servicios
         element: <Servicios />,
+      },
+      {
+        path: '/instalaciones', // Ruta para Servicios
+        element: <Instalaciones />,
       },
       {
         path: '/terapias', // Ruta para Terapias

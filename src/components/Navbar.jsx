@@ -67,6 +67,16 @@ export const Navbar = () => {
             Terapias
           </Link>
           <Link
+            to='/instalaciones'
+            className={`nav-link ${
+              isActive('/instalaciones')
+                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
+                : ''
+            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
+          >
+            Instalaciones
+          </Link>
+          <Link
             to='/galeria'
             className={`nav-link ${
               isActive('/galeria')
