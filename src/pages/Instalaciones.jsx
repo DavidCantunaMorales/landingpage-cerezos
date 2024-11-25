@@ -12,7 +12,7 @@ const instalaciones = [
   {
     imageSrc: InstImage1,
     altText: 'Instalación 1',
-    description: 'Un amplio y hermoso jardín para el esparcimiento y la relajación.',
+    description: 'Habitaciones confortables y bien equipadas para cada residente.',
   },
   {
     imageSrc: InstImage2,
@@ -22,22 +22,22 @@ const instalaciones = [
   {
     imageSrc: InstImage3,
     altText: 'Instalación 3',
-    description: 'Equipado con máquinas modernas para la rehabilitación y ejercicio diario.',
+    description: 'Un lugar acogedor para que los residentes se reúnan y socialicen.',
   },
   {
     imageSrc: InstImage4,
     altText: 'Instalación 4',
-    description: 'Una piscina climatizada para terapia acuática y recreación.',
+    description: 'Un amplio y hermoso jardín para el esparcimiento y la relajación.',
   },
   {
     imageSrc: InstImage5,
     altText: 'Instalación 5',
-    description: 'Un comedor amplio y luminoso con menús nutritivos y variados.',
+    description: 'Un amplio y hermoso jardín para el esparcimiento y la relajación.',
   },
   {
     imageSrc: InstImage6,
     altText: 'Instalación 6',
-    description: 'Habitaciones confortables y bien equipadas para cada residente.',
+    description: 'Espacio dedicado para actividades recreativas y juegos.',
   },
   {
     imageSrc: InstImage7,
@@ -47,7 +47,7 @@ const instalaciones = [
   {
     imageSrc: InstImage8,
     altText: 'Instalación 8',
-    description: 'Una biblioteca tranquila con una amplia colección de libros.',
+    description: 'Espacio dedicado para actividades recreativas y juegos.',
   },
 ];
 
