@@ -1,7 +1,8 @@
 import Logo from "../assets/logo.png";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 
 const Footer = () => {
@@ -25,8 +26,8 @@ const Footer = () => {
           <a href="#" className="text-gray-600 hover:text-pink-500">
           <FaInstagramSquare size={30}/>
           </a>
-          <a href="#" className="text-gray-600 hover:text-red-500">
-          <FaYoutube size={30}/>
+          <a href="#" className="text-gray-600 hover:text-green-500">
+          <FaWhatsapp size={30}/>
           </a>
         </div>
 

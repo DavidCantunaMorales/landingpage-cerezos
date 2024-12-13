@@ -10,7 +10,6 @@ export const Servicios = () => {
       description:
         'Brindamos un hogar permanente con atención médica especializada y actividades diarias para promover una vida activa y plena. Nuestro personal está siempre disponible para proporcionar el mejor cuidado.',
       details: 'Detalles completos de la Residencia Permanente...',
-      fecha: '5 Nov 2024',
       categoria: 'Atención Integral',
       autor: 'Los Cerezos',
     },
@@ -21,7 +20,6 @@ export const Servicios = () => {
       description:
         'Ofrecemos un servicio de estancia diurna para adultos mayores que necesitan supervisión durante el día. Incluye actividades recreativas, ejercicios suaves y acompañamiento médico, asegurando un entorno seguro y estimulante.',
       details: 'Detalles completos de la Guardería Diurna...',
-      fecha: '5 Nov 2024',
       categoria: 'Cuidado Diurno',
       autor: 'Los Cerezos',
     },
@@ -32,7 +30,6 @@ export const Servicios = () => {
       description:
         'Contamos con estancias temporales para recuperaciones postoperatorias o simplemente para ofrecer un descanso temporal con todos los cuidados necesarios. Un espacio cómodo y seguro para una rápida recuperación.',
       details: 'Detalles completos de la Estancia Temporal...',
-      fecha: '5 Nov 2024',
       categoria: 'Estancia Temporal',
       autor: 'Los Cerezos',
     },
@@ -43,7 +40,6 @@ export const Servicios = () => {
       description:
         'Disponemos de un programa de rehabilitación física para ayudar a los residentes a recuperar movilidad y fortalecer su cuerpo tras cirugías o lesiones. El servicio incluye terapias personalizadas con fisioterapeutas especializados.',
       details: 'Detalles completos de la Rehabilitación Física...',
-      fecha: '5 Nov 2024',
       categoria: 'Salud y Bienestar',
       autor: 'Los Cerezos',
     },
@@ -54,7 +50,6 @@ export const Servicios = () => {
       description:
         'Proporcionamos atención médica constante con un equipo de profesionales de la salud que supervisan el bienestar de nuestros residentes. Contamos con médicos, enfermeras y personal capacitado las 24 horas.',
       details: 'Detalles completos de la Atención Médica Especializada...',
-      fecha: '5 Nov 2024',
       categoria: 'Cuidado Médico',
       autor: 'Los Cerezos',
     },
@@ -65,7 +60,6 @@ export const Servicios = () => {
       description:
         'Organizamos actividades recreativas, talleres de manualidades, y programas culturales para fomentar el bienestar emocional y la socialización. Nuestro enfoque es enriquecer la vida diaria de nuestros residentes.',
       details: 'Detalles completos de las Actividades Recreativas y Talleres...',
-      fecha: '5 Nov 2024',
       categoria: 'Actividades Recreativas',
       autor: 'Los Cerezos',
     },

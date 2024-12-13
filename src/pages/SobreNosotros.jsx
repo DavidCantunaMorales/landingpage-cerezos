@@ -10,13 +10,13 @@ export const SobreNosotros = () => {
       imageSrc: CerezosImage,
       altText: "Misión",
       title: "Misión",
-      description: "Nuestra misión es proporcionar un servicio de alta calidad para todos nuestros clientes.",
+      description: "Ofrecer un servicio geriátrico multidisciplinario enfocado al adulto mayor, a través de diferentes actividades desarrolladas por nuestros profesionales con el fin de garantizar un envejecimiento activo, así como el mantener la funcionalidad y autonomía propias de nuestros residentes en sus diferentes esferas (Física, cognitiva, social, espiritual y emocional).",
     },
     {
       imageSrc: CerezosImage,
       altText: "Visión",
       title: "Visión",
-      description: "Nuestra visión es convertirnos en líderes de la industria con soluciones innovadoras.",
+      description: "Ser una residencia que promueve la salud y el bienestar de nuestros adultos mayores mejorando su calidad de vida, mediante nuestros servicios con la finalidad de incrementar el sentido de participación, autoestima y utilidad, rompiendo las barreras que surgen con las diferentes patologías que se pueden presentar en el adulto mayor.",
     },
     {
       imageSrc: CerezosImage,
