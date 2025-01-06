@@ -76,6 +76,7 @@ export const Navbar = () => {
           >
             Instalaciones
           </Link>
+          
           <Link
             to='/galeria'
             className={`nav-link ${
@@ -85,16 +86,6 @@ export const Navbar = () => {
             } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
           >
             Galeria
-          </Link>
-          <Link
-            to='/salidas'
-            className={`nav-link ${
-              isActive('/salidas')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Salidas
           </Link>
           <Link
             to='/contactos'

@@ -6,7 +6,7 @@ const CardImgCom = ({ imageSrc, altText, description }) => {
   return (
     <div className="relative border rounded-lg overflow-hidden shadow-md bg-white">
       <div className="p-4">
-        <div className="bg-gray-100 h-48 flex items-center justify-center overflow-hidden">
+        <div className="bg-gray-100 h-64 flex items-center justify-center overflow-hidden">
           <img
             className="w-full h-full object-cover cursor-pointer"
             src={imageSrc}
@@ -22,10 +22,9 @@ const CardImgCom = ({ imageSrc, altText, description }) => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <div className="relative p-4">
             <img
-              className="w-full h-auto max-w-3xl"  
+              className="w-full h-auto max-w-xl"  
               src={imageSrc}
               alt={altText}
-              style={{ aspectRatio: '4 / 3' }} 
             />
             <button
               className="absolute top-2 right-2 text-white bg-black bg-opacity-50 rounded-full p-2"

@@ -1,104 +1,139 @@
-import CardImgArri from '../components/CardImgArri.jsx';
-import CerezosImage from '../assets/cerezos-home.webp';
+import ServiceCard from '../components/ServiceCard.jsx';
+import EstanciaTemporal from '../assets/Servicios/estancia_temporal.webp';
+import Estimulacion from '../assets/Servicios/estimulacion_cognitiva.webp';
+import Guarderia from '../assets/Servicios/guarderia.webp';
+import Medicos from '../assets/Servicios/medicos_especializados.webp';
+import Rehabilitacion from '../assets/Servicios/rehabilitacion_fisica.webp';
+import Residencia from '../assets/Servicios/residencia_permanente.webp';
+
 
 export const Servicios = () => {
   const servicios = [
     {
-      imageSrc: CerezosImage,
+      imageSrc: Residencia,
       altText: 'Residencia Permanente',
       title: 'Residencia Permanente',
       description:
-        'Brindamos un hogar permanente con atención médica especializada y actividades diarias para promover una vida activa y plena. Nuestro personal está siempre disponible para proporcionar el mejor cuidado.',
-      details: 'Detalles completos de la Residencia Permanente...',
-      categoria: 'Atención Integral',
+        'Brindamos un hogar permanente con atención médica especializada y actividades diarias para promover una vida activa y plena.',
+      details: [
+        'Habitaciones cómodas',
+        'Enfermería 24/7',
+        'Salidas recreacionales',
+        'Lavandería',
+        'Peluquería',
+        'Terapias',
+        'Plan nutricional personalizado',
+      ],
+      categoria: 'Residencia Permanente',
+      horarios: 'Lunes a domingo, 24 horas',
       autor: 'Los Cerezos',
     },
     {
-      imageSrc: CerezosImage,
-      altText: 'Guardería Diurna',
-      title: 'Guardería Diurna',
+      imageSrc: Guarderia,
+      altText: 'Guardería',
+      title: 'Guardería',
       description:
-        'Ofrecemos un servicio de estancia diurna para adultos mayores que necesitan supervisión durante el día. Incluye actividades recreativas, ejercicios suaves y acompañamiento médico, asegurando un entorno seguro y estimulante.',
-      details: 'Detalles completos de la Guardería Diurna...',
+        'Servicio de estancia diurna para adultos mayores que necesitan supervisión durante el día.',
+      details: [
+        'Servicio de enfermería',
+        'Acceso a todas las instalaciones',
+        'Media mañana',
+        'Almuerzo',
+        'Media tarde',
+      ],
       categoria: 'Cuidado Diurno',
+      horarios: '9:00 AM - 12:00 PM / 9:00 AM - 4:00 PM',
       autor: 'Los Cerezos',
     },
     {
-      imageSrc: CerezosImage,
+      imageSrc: EstanciaTemporal,
       altText: 'Estancia Temporal',
       title: 'Estancia Temporal (Hotel de Paso)',
       description:
-        'Contamos con estancias temporales para recuperaciones postoperatorias o simplemente para ofrecer un descanso temporal con todos los cuidados necesarios. Un espacio cómodo y seguro para una rápida recuperación.',
-      details: 'Detalles completos de la Estancia Temporal...',
+        'Ofrecemos estancias temporales para recuperaciones postoperatorias o descanso temporal con cuidados necesarios.',
+      details: [
+        'Derecho a todas las instalaciones',
+        'Servicio de enfermería',
+        'Terapias',
+        'Alimentación',
+      ],
       categoria: 'Estancia Temporal',
+      horarios: 'Lunes a domingo, 24 horas',
       autor: 'Los Cerezos',
     },
     {
-      imageSrc: CerezosImage,
+      imageSrc: Estimulacion,
+      altText: 'Estimulación Cognitiva',
+      title: 'Estimulación Cognitiva',
+      description:
+        'Disponemos de un programa de rehabilitación física para ayudar a los residentes a recuperar movilidad y fortalecer su cuerpo tras cirugías o lesiones. El servicio incluye terapias personalizadas con fisioterapeutas especializados.',
+      details: [
+        'Terapias personalizadas',
+        'Actividades cognitivas',
+        'Entrenamiento físico especializado',
+      ],
+      categoria: 'Salud y Bienestar',
+      horarios: 'Lunes a viernes, 9:00 AM - 6:00 PM',
+      autor: 'Los Cerezos',
+    },
+    {
+      imageSrc: Rehabilitacion,
       altText: 'Rehabilitación Física',
       title: 'Rehabilitación Física',
       description:
         'Disponemos de un programa de rehabilitación física para ayudar a los residentes a recuperar movilidad y fortalecer su cuerpo tras cirugías o lesiones. El servicio incluye terapias personalizadas con fisioterapeutas especializados.',
-      details: 'Detalles completos de la Rehabilitación Física...',
+      details: [
+        'Fisioterapia especializada',
+        'Terapias musculares',
+        'Planes de recuperación personalizados',
+      ],
       categoria: 'Salud y Bienestar',
+      horarios: 'Lunes a sábado, 8:00 AM - 5:00 PM',
       autor: 'Los Cerezos',
     },
     {
-      imageSrc: CerezosImage,
+      imageSrc: Medicos,
       altText: 'Atención Médica Especializada',
       title: 'Atención Médica Especializada',
       description:
-        'Proporcionamos atención médica constante con un equipo de profesionales de la salud que supervisan el bienestar de nuestros residentes. Contamos con médicos, enfermeras y personal capacitado las 24 horas.',
-      details: 'Detalles completos de la Atención Médica Especializada...',
+        'Proporcionamos atención médica constante con un equipo de profesionales de la salud que supervisan el bienestar de nuestros residentes.',
+      details: [
+        'Supervisión médica constante',
+        'Personal capacitado 24/7',
+        'Monitoreo de signos vitales',
+      ],
       categoria: 'Cuidado Médico',
-      autor: 'Los Cerezos',
-    },
-    {
-      imageSrc: CerezosImage,
-      altText: 'Actividades Recreativas y Talleres',
-      title: 'Actividades Recreativas y Talleres',
-      description:
-        'Organizamos actividades recreativas, talleres de manualidades, y programas culturales para fomentar el bienestar emocional y la socialización. Nuestro enfoque es enriquecer la vida diaria de nuestros residentes.',
-      details: 'Detalles completos de las Actividades Recreativas y Talleres...',
-      categoria: 'Actividades Recreativas',
+      horarios: '24 horas, todos los días',
       autor: 'Los Cerezos',
     },
   ];
 
   return (
-    <section className='h-auto p-8 bg-gray-100'>
+    <section className="h-auto p-8 bg-gray-100">
       {/* Título y descripción de la sección */}
-      <div className='text-center mb-12'>
-        <h1 className='text-6xl font-bold'>
-          Nuestros <span className='text-red-600'>Servicios</span>
+      <div className="text-center mb-12">
+        <h1 className="text-6xl font-bold">
+          Nuestros <span className="text-red-600">Servicios</span>
         </h1>
-        <p className='text-gray-600 text-xl mt-4'>
+        <p className="text-gray-600 text-xl mt-4">
           En Los Cerezos, nos comprometemos a ofrecer servicios especializados
           para el bienestar y la felicidad de nuestros residentes.
         </p>
       </div>
 
       {/* Listado de Servicios */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {servicios.map((servicio, index) => (
-          <CardImgArri
+          <ServiceCard
             key={index}
             imageSrc={servicio.imageSrc}
             altText={servicio.altText}
             title={servicio.title}
             description={servicio.description}
-            details={
-              <>
-                <div className='flex items-center gap-2 mb-2 text-gray-500 text-sm'>
-                  <span>{servicio.fecha}</span>
-                  <span>•</span>
-                  <span>{servicio.categoria}</span>
-                  <span>•</span>
-                  <span>{servicio.autor}</span>
-                </div>
-                {servicio.details}
-              </>
-            }
+            details={servicio.details}
+            categoria={servicio.categoria}
+            horarios={servicio.horarios}
+            autor={servicio.autor}
           />
         ))}
       </div>

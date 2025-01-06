@@ -1,20 +1,29 @@
 import CardImgArri from '../components/CardImgArri.jsx';
-import CerezosImage from '../assets/cerezos-home.webp';
+import ocupacional from '../assets//Terapias/ocupacional.webp';
+import fisica from '../assets//Terapias/fisica.webp';
+import arte from '../assets//Terapias/arte.webp';
+
 
 const therapies = [
   {
-    imageSrc: CerezosImage,
+    imageSrc: ocupacional,
     altText: 'Therapy 1',
-    title: 'Terapia Física',
-    description: 'Mejora la movilidad y reduce el dolor.',
-    details: 'Detalles completos de la Terapia Física...',
+    title: 'Terapia Ocupacional',
+    description: 'Fomenta la independencia y la salud integral.',
+    details: 'Nuestros terapeutas se enfocan en prevenir la dependencia, con actividades enfocadas a que los adultos mayores a traviesen la etapa de la tercera edad con una buena salud tanto física como cognitiva reduciendo estados patológicos, y permitiendo que tengan una vida saludable y activa.',
   },
   {
-    imageSrc: CerezosImage,
+    imageSrc: fisica,
     altText: 'Therapy 2',
-    title: 'Terapia Ocupacional',
-    description: 'Ayuda a realizar actividades diarias.',
-    details: 'Detalles completos de la Terapia Ocupacional...',
+    title: 'Terapia Física',
+    description: 'Fortalece el cuerpo y previene el sedentarismo.',
+    details: 'Nuestros terapeutas físicos se enfocan en que nuestros adultos mayores mantegan una vida activa mediante ejercicios que ayuden a mantener y fortalecer todo su sistema muscular previniendo así el sedentarismo y patologías ostemusculares.',
+  },{
+    imageSrc: arte,
+    altText: 'Therapy 3',
+    title: 'Arte Terapia',
+    description: 'Estimula la creatividad y refuerza habilidades cognitivas.',
+    details: 'Contamos con un profesional en el arte el cual se enfoca en desarrollar el lado artístico de nuestros adultos mayores lo que les ayuda a mantener la motricidad fina, aliviando el dolor y la regidez y reforzando componentes cognitivos como la memoria, la atención y concentración de los adultos mayores',
   },
   // Añadir más terapias con el mismo formato según sea necesario
 ];

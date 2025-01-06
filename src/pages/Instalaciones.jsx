@@ -1,12 +1,10 @@
 import CardImgCom from '../components/CardImgCom.jsx';
-import InstImage1 from '../assets/instalacion1.jpg';
-import InstImage2 from '../assets/instalacion2.jpg';
-import InstImage3 from '../assets/instalacion3.jpg';
-import InstImage4 from '../assets/instalacion4.jpg';
-import InstImage5 from '../assets/instalacion5.jpg';
-import InstImage6 from '../assets/instalacion6.jpg';
-import InstImage7 from '../assets/instalacion7.jpg';
-import InstImage8 from '../assets/instalacion8.jpg';
+import InstImage1 from '../assets/Instalaciones/instalacion1.jpg';
+import InstImage2 from '../assets/Instalaciones/instalacion2.jpg';
+import InstImage3 from '../assets/Instalaciones/instalacion3.jpg';
+import InstImage4 from '../assets/Instalaciones/instalacion4.jpg';
+import InstImage6 from '../assets/Instalaciones/instalacion6.jpg';
+import InstImage7 from '../assets/Instalaciones/instalacion7.jpg';
 
 const instalaciones = [
   {
@@ -17,12 +15,12 @@ const instalaciones = [
   {
     imageSrc: InstImage2,
     altText: 'Instalación 2',
-    description: 'Un lugar acogedor para que los residentes se reúnan y socialicen.',
+    description: 'Áreas sociales para que los residentes se reunan y compartan momentos agradables.',
   },
   {
     imageSrc: InstImage3,
     altText: 'Instalación 3',
-    description: 'Un lugar acogedor para que los residentes se reúnan y socialicen.',
+    description: 'Amplios espacios para realización de actividades terapeúticas.',
   },
   {
     imageSrc: InstImage4,
@@ -30,23 +28,13 @@ const instalaciones = [
     description: 'Un amplio y hermoso jardín para el esparcimiento y la relajación.',
   },
   {
-    imageSrc: InstImage5,
-    altText: 'Instalación 5',
-    description: 'Un amplio y hermoso jardín para el esparcimiento y la relajación.',
-  },
-  {
     imageSrc: InstImage6,
     altText: 'Instalación 6',
-    description: 'Espacio dedicado para actividades recreativas y juegos.',
+    description: 'Estación de enfermería para toma de signos vitales y administración de medicamentos.',
   },
   {
     imageSrc: InstImage7,
     altText: 'Instalación 7',
-    description: 'Espacio dedicado para actividades recreativas y juegos.',
-  },
-  {
-    imageSrc: InstImage8,
-    altText: 'Instalación 8',
     description: 'Espacio dedicado para actividades recreativas y juegos.',
   },
 ];

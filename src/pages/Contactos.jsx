@@ -15,7 +15,7 @@ export const Contactos = () => {
         <div className="border rounded-lg p-6 shadow-md bg-white flex flex-col items-center text-center">
           <FaPhone className="text-4xl text-red-600 mb-4" />
           <h2 className="text-xl font-bold mb-2">Teléfono</h2>
-          <p className="text-gray-700 mb-1">+123 456 7890</p>
+          <p className="text-gray-700 mb-1">+593 98 034 6861</p>
           <p className="text-gray-700">Disponible de 9 AM a 6 PM</p>
         </div>
 
@@ -23,7 +23,7 @@ export const Contactos = () => {
         <div className="border rounded-lg p-6 shadow-md bg-white flex flex-col items-center text-center">
           <FaEnvelope className="text-4xl text-red-600 mb-4" />
           <h2 className="text-xl font-bold mb-2">Correo Electrónico</h2>
-          <p className="text-gray-700 mb-1">info@example.com</p>
+          <p className="text-gray-700 mb-1">loscerezosecu@gmail.com</p>
           <p className="text-gray-700">Respondiendo dentro de 24 horas</p>
         </div>
 

@@ -1,25 +1,27 @@
 import CardImgDer from "../components/CardImgDer.jsx";
 import CardImgIzq from "../components/CardImgIzq.jsx";
-import CerezosImage from '../assets/cerezos-home.webp';
+import Mision from '../assets/SobreNosotros/mision.webp';
+import Vision from '../assets/SobreNosotros/vision.webp';
+import Valores from '../assets/SobreNosotros/valores.webp';
 
 
 export const SobreNosotros = () => {
   // Datos de ejemplo
   const cardsData = [
     {
-      imageSrc: CerezosImage,
+      imageSrc: Mision,
       altText: "Misión",
       title: "Misión",
       description: "Ofrecer un servicio geriátrico multidisciplinario enfocado al adulto mayor, a través de diferentes actividades desarrolladas por nuestros profesionales con el fin de garantizar un envejecimiento activo, así como el mantener la funcionalidad y autonomía propias de nuestros residentes en sus diferentes esferas (Física, cognitiva, social, espiritual y emocional).",
     },
     {
-      imageSrc: CerezosImage,
+      imageSrc: Vision,
       altText: "Visión",
       title: "Visión",
       description: "Ser una residencia que promueve la salud y el bienestar de nuestros adultos mayores mejorando su calidad de vida, mediante nuestros servicios con la finalidad de incrementar el sentido de participación, autoestima y utilidad, rompiendo las barreras que surgen con las diferentes patologías que se pueden presentar en el adulto mayor.",
     },
     {
-      imageSrc: CerezosImage,
+      imageSrc: Valores,
       altText: "Valores",
       title: "Valores",
       description: "Nuestros valores fundamentales son la integridad, el respeto y la innovación.",
