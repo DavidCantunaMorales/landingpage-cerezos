@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/landingpage-cerezos/', // Cambia esto por el nombre de tu repositorio
+  base: "./", // Cambia el valor base para rutas relativas
   plugins: [react()],
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+  },
 });
+
+
