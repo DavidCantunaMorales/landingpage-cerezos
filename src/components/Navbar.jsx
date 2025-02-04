@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import Footer from './footer';
+import Footer from './Footer';
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
