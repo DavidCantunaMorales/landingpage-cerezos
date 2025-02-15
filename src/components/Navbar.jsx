@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import Footer from './Footer';
-import Logo from '../assets/IconCerezos.png'; // Asegúrate de tener esta imagen en la carpeta correcta
+import Logo from '../assets/IconCerezos.png'; // Asegúrate de que el logo esté en la carpeta correcta
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,92 +19,45 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className='flex justify-between items-center w-full p-4 h-[10vh] bg-[#ac2454] xl:justify-center fixed top-0 z-50'>
+      <header className='flex justify-between items-center w-full p-4 h-[10vh] bg-[#ac2454] fixed top-0 z-50 xl:px-12'>
         {/* Logo e Identidad */}
-        <div className='flex items-center gap-2 xl:w-1/6 z-20'>
+        <div className='flex items-center gap-3 flex-shrink-0'>
           <img
             src={Logo}
             alt='Logo Los Cerezos'
             className='h-10 w-auto sm:h-12' // Ajuste de tamaño para diferentes pantallas
           />
-          <h1 className='text-3xl font-bold text-white'>Los Cerezos</h1>
+          <h1 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white whitespace-nowrap'>
+            Los Cerezos
+          </h1>
         </div>
 
         {/* Menú de Navegación */}
         <nav
           className={`fixed bg-cerezo w-[80%] h-full font-bold ${
             showMenu ? 'left-0 bg-[#ac2454]' : '-left-full'
-          } top-0 flex-1 flex flex-col items-center justify-center z-10 gap-10 transition-all duration-500 ease-in-out text-white
-            xl:static xl:flex-row xl:w-full`}
+          } top-0 flex flex-col items-center justify-center z-10 gap-8 transition-all duration-500 ease-in-out text-white
+            xl:static xl:flex-row xl:w-auto xl:gap-6`}
         >
-          <Link
-            to='/'
-            className={`nav-link mt-10 xl:mt-0 ${
-              isActive('/') ? 'text-[#ac2454] bg-white px-4 py-2 rounded' : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Inicio
-          </Link>
-          <Link
-            to='/sobre-nosotros'
-            className={`nav-link ${
-              isActive('/sobre-nosotros')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Sobre Nosotros
-          </Link>
-          <Link
-            to='/servicios'
-            className={`nav-link ${
-              isActive('/servicios')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Servicios
-          </Link>
-          <Link
-            to='/terapias'
-            className={`nav-link ${
-              isActive('/terapias')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Terapias
-          </Link>
-          <Link
-            to='/instalaciones'
-            className={`nav-link ${
-              isActive('/instalaciones')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Instalaciones
-          </Link>
-          <Link
-            to='/galeria'
-            className={`nav-link ${
-              isActive('/galeria')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Galería
-          </Link>
-          <Link
-            to='/contactos'
-            className={`nav-link ${
-              isActive('/contactos')
-                ? 'text-[#ac2454] bg-white px-4 py-2 rounded'
-                : ''
-            } hover:text-[#ac2454] hover:bg-white px-4 py-2 rounded transition-all duration-300`}
-          >
-            Contactos
-          </Link>
+          {[
+            { to: '/', text: 'Inicio' },
+            { to: '/sobre-nosotros', text: 'Sobre Nosotros' },
+            { to: '/servicios', text: 'Servicios' },
+            { to: '/terapias', text: 'Terapias' },
+            { to: '/instalaciones', text: 'Instalaciones' },
+            { to: '/galeria', text: 'Galería' },
+            { to: '/contactos', text: 'Contactos' }
+          ].map(({ to, text }) => (
+            <Link
+              key={to}
+              to={to}
+              className={`nav-link px-4 py-2 rounded transition-all duration-300 ${
+                isActive(to) ? 'text-[#ac2454] bg-white' : 'hover:text-[#ac2454] hover:bg-white'
+              }`}
+            >
+              {text}
+            </Link>
+          ))}
         </nav>
 
         {/* Botón del menú para pantallas pequeñas */}
