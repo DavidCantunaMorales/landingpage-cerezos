@@ -1,13 +1,12 @@
-import CerezosImage from '../assets/cerezos-home.webp';
+import Galeria1 from '../assets/Galería/Galeria1.jpg';
+import Galeria2 from '../assets/Galería/Galeria2.jpg';
+import Galeria3 from '../assets/Galería/Galeria3.jpg';
 
 export const Galeria = () => {
   const imagenes = [
-    { src: CerezosImage, alt: 'Sala común de Los Cerezos' },
-    { src: CerezosImage, alt: 'Jardín y área de recreación' },
-    { src: CerezosImage, alt: 'Terapias de grupo' },
-    { src: CerezosImage, alt: 'Habitaciones cómodas' },
-    { src: CerezosImage, alt: 'Comedor comunitario' },
-    { src: CerezosImage, alt: 'Actividades recreativas' },
+    { src: Galeria1, },
+    { src: Galeria2, },
+    { src: Galeria3, },
   ];
 
   return (

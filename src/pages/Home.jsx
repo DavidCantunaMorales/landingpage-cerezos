@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -11,6 +12,7 @@ import InstImage from '../assets/Instalaciones/instalacion5.jpg';
 
 
 export const Home = () => {
+  const navigate = useNavigate(); // Hook para navegar entre páginas
   const testimonios = [
     {
       mensaje:
@@ -67,8 +69,11 @@ export const Home = () => {
               objetivo es que se sientan como en casa, rodeados de seguridad y
               confort.
             </p>
-            <button className='bg-red-600 mt-4 md:mt-8 text-white text-lg sm:text-xl py-2 px-6 rounded-full hover:bg-red-700 transition duration-300'>
-              Conoce Nuestros Servicios
+            <button
+              onClick={() => navigate('/servicios')} // Redirección a la página Servicios
+              className='bg-red-600 mt-4 md:mt-8 text-white text-lg sm:text-xl py-2 px-6 rounded-full hover:bg-red-700 transition duration-300'
+            >
+              Conoce Nuestros Servicios →
             </button>
           </div>
         </div>

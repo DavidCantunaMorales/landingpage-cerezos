@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png";
+import Logo from "../assets/LogoNuevo.png";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -14,7 +14,7 @@ const Footer = () => {
           <img
             src={Logo}
             alt="Logo"
-            className="mx-auto h-64 w-auto object-contain"
+            className="mx-auto h-40 w-auto object-contain"
           />
         </div>
 
