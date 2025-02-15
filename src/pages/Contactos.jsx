@@ -27,7 +27,7 @@ export const Contactos = () => {
           <div className="border rounded-lg p-6 shadow-md bg-white flex flex-col items-center text-center">
             <FaEnvelope className="text-4xl text-red-600 mb-4" />
             <h2 className="text-xl font-bold mb-2">Correo Electrónico</h2>
-            <p className="text-gray-700 mb-1">loscerezosecu@gmail.com</p>
+            <p className="text-gray-700 mb-1">residencialoscerezos2024@gmail.com</p>
             <p className="text-gray-700">Respondiendo dentro de 24 horas</p>
           </div>
 
@@ -35,7 +35,7 @@ export const Contactos = () => {
           <div className="border rounded-lg p-6 shadow-md bg-white flex flex-col items-center text-center">
             <RiCellphoneFill className="text-4xl text-red-600 mb-4" />
             <h2 className="text-xl font-bold mb-2">Celular</h2>
-            <p className="text-gray-700 mb-1">0998990130</p>
+            <p className="text-gray-700 mb-1">0986081475</p>
             <p className="text-gray-700">Respondiendo dentro de 24 horas</p>
           </div>
         </div>
